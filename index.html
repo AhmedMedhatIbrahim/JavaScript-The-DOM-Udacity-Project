@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body onscroll="ScrollLocation()">
+	<section class="header" id="Home">
+		<nav>
+			<img class="NavLogo" src="img/NavLogo.png">
+			<ul class="NavigationBar">
+				
+				<div class="NavLinks hiddenMobile">
+					<!-- Old Static Links ------------>
+
+					<!--<li onclick="ScrollToId(this);" destination="Home" class="active">Home</li>
+					<li onclick="ScrollToId(this);" destination="Portfolio" >Portfolio</li>
+					<li onclick="ScrollToId(this);" destination="AboutUs" >About Us</li>
+					<li onclick="ScrollToId(this);" destination="ContactUs" >Contact Us</li>
+					<li onclick="ScrollToId(this);" destination="Blog" >Blog</li>-->
+				</div>
+				<img onclick="BurgerBtn()" class="BurgerBtn" src="img/Icons/menu2.svg">
+			</ul>
+		</nav>
+
+		<div class="HeaderContent">
+			<div class="SliderContainer">
+				<div onclick="SlideBack()" class="LeftSlide">
+					<img src="img/Icons/back.svg">
+				</div>
+
+				<div onclick="SlideNext()" class="RightSlide">
+					<img src="img/Icons/next.svg">
+				</div>
+
+
+
+				<!--Slide 1-->
+				<div align="center" class="Slide ActiveSlide" style="background-image: url('img/Slider/water1.jpg');">
+					<div class="SliderText">
+						<h1>Udacity Project</h1>
+						<p>Some Text for Slide 1</p>	
+						<button onclick="ScrollToId(this);" destination="Portfolio" class="Btn">Portfolio</button>
+					</div>		
+				</div>
+
+				<!--Slide 2-->
+				<div align="center" class="Slide" style="background-image: url('img/Slider/water2.jpg');">
+					<div class="SliderText">
+						<h1>Udacity Project</h1>
+						<p>Some Text for Slide 2</p>
+						<button onclick="ScrollToId(this);" destination="AboutUs" class="Btn">About Us</button>
+					</div>
+				</div>
+
+
+
+				<!--Slide 3-->
+				<div align="center" class="Slide" style="background-image: url('img/Slider/water3.jpg');">
+					<div class="SliderText">
+						<h1>Udacity Project</h1>
+						<p>Some Text for Slide 3</p>
+						<button onclick="ScrollToId(this);" destination="ContactUs" class="Btn">Contact Us</button>
+					</div>
+				</div>
+
+
+
+
+				<!-- Ready to Use Slide 4 ------You can copy it to create more slides ----------------------
+
+
+				<div align="center" class="Slide" style="background-image: url('img/Slider/water3.jpg');">
+					<div class="SliderText">
+						<h1>Udacity Project</h1>
+						<p>Some Text for Slide 3</p>
+						<button onclick="ScrollToId(this);" destination="ContactUs" class="Btn">Contact Us</button>
+					</div>
+				</div>
+				
+				-------------------------------------------------------------->
+
+
+
+
+
+
+			</div>
+
+			<div id="SliderNavigation" align="center" class="SliderNavigation">
+			</div>
+			
+		</div>
+
+		
+	</section>
+	
+
+
+	<section id="Portfolio">
+
+		<div align="center" class="FullScreen">
+			<h1>Portfolio</h1>
+		</div>
+
+		<div align="center" class="FullScreen">
+			<div class="Image"></div>
+			<div class="Image"></div>
+			<div class="Image"></div>
+			<div class="Image"></div>
+			<div class="Image"></div>
+			<div class="Image"></div>
+		</div>
+
+
+		
+	</section>
+
+
+
+	<section id="AboutUs">		
+		<div align="center" class="FullScreen">
+			<h1>About Us</h1>
+			<hr style="max-width:200px;">
+
+
+			<p>
+				Udacity is where lifelong learners come to learn the skills they need, to land the jobs they want, to build the lives they deserve.
+			</p>
+
+			<img src="img/Slider/water3.jpg">
+
+			<p>
+				Spreading the word about your products using marketing and promotional texts can be effective, especially when offers are available for a limited time. Get the attention of customers with strong calls to action that encourage an immediate response. 
+			</p>
+		</div>
+
+
+
+
+		
+	</section>
+
+
+
+	<section id="ContactUs">
+		<div align="center" class="FullScreen">
+			<h1>Contact Us</h1>
+
+			<form>
+				<div align="center" class="ContactDiv">
+					<label>Name:</label>
+					<input type="text" name="Name">
+
+					<label>Mobile:</label>
+					<input type="text" name="Mobile">
+
+					<label>Email:</label>
+					<input type="text" name="Email">
+
+					<label>Message:</label>
+					<textarea rows="5" name="Message"></textarea>
+
+					<button class="BlueBtn">Send</button>
+				</div>
+			</form>
+
+		</div>		
+	</section>
+
+
+	<section id="Blog">		
+		<div align="center" class="FullScreen">
+			<h1>Blog</h1>
+			<hr style="max-width:200px;">
+
+
+			<p>
+				Udacity is where lifelong learners come to learn the skills they need, to land the jobs they want, to build the lives they deserve.
+			</p>
+
+			<img src="img/Slider/water2.jpg">
+
+			<p>
+				In these times of challenges and great opportunities, the current and future reality of learning, skills training, and work are changing! Momentum is rising towards going all digital; outreaching from personal spaces to online global scapes; merging goals and markets and opportunities. It’s never been a better time to go fwd!
+			</p>
+		</div>		
+	</section>
+
+
+	<div onclick="ScrollToTop();" class="ScrollToTopBtn hidden">
+		<img src="img/Icons/upload.svg">
+	</div>
+
+
+	<footer>
+		<div align="center" class="FullScreen">
+			<p>Copyright © 2021 Udacity Project By Ahmed Medhat. </p>
+		</div>
+		
+	</footer>
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

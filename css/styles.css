@@ -1,0 +1,189 @@
+body,html{margin: 0px;padding: 0px;}
+
+*{font-family: 'Poppins', sans-serif;outline: none;-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+a{text-decoration: none}
+
+
+
+/* ---------- Header & Navigation Styles------------*/
+.header{background-color: #061721/*#3a85c8*/;width: 100%;height:100vh;}
+
+
+.NavigationBar{width: 100%;box-sizing: border-box;padding: 0px 30px;background-color: #11232f;
+	position: fixed;top: 0px;left:0px;margin:0px;height:80px;font-weight: 600;z-index: 100;}
+.NavigationBar li{display: inline-block;line-height: 80px;padding: 0px 15px;cursor: pointer;color: #effafc;list-style: none;}
+.active{color:#3379c0 !important;}
+
+
+.NavigationBar li:hover{color: #4da9da;}
+.NavLinks{display: inline-block;position: fixed;right:0px;top:0px;margin-right: 50px;}
+.NavLogo{height:40px;padding: 20px 0px;display: inline-block;vertical-align: top;position: fixed;top:0px;z-index: 200;left:20px; }
+
+.BurgerBtn{display: none; }
+
+
+/* ---------- Slider Styles------------*/
+.HeaderContent,.SliderContainer,.Slide{position: absolute;top: 0px;left:0px;height: 100vh;width: 100%;}
+
+.SliderContainer{position: absolute;top: 0px;left:0px;}
+.Slide{background-size: cover;background-position: center center;z-index: 2;background-repeat: no-repeat;}
+.ActiveSlide{z-index: 5;animation-name: ZoomOutAnimation;animation-duration: 1s;animation-fill-mode: both;background-size: cover;}
+
+@keyframes ZoomOutAnimation{
+	from{background-size: 115%}
+	to{background-size:100% }
+}
+
+
+.SliderNavigation{height: 20px;position: absolute;bottom: 0px ;width: 100%;margin-bottom: 15px;z-index: 6}
+.SliderNavigationDots{display: inline-block;height: 10px;width:10px;border: 1px solid white;border-radius: 50%;margin:0px 2px;cursor: pointer;}
+.SliderNavigationDotsActive{background-color: white;}
+
+
+.SliderText{top: 50%;left: 50%;transform: translate(-50%,-50%);position: absolute;}
+.SliderText h1,.SliderText p{color: white;}
+.Btn{background-color:transparent; /*#3379c0*/border: 2px solid white;padding: 17px 40px;display: block;cursor: pointer;color: white;font-size: 16px;font-weight: 500;margin-top: 40px;}
+.Btn:hover{background-color:white; /*#3379c0*/border: 2px solid white; color: black}
+
+
+
+.LeftSlide{width: 70px;position: absolute;height: 100vh;top: 0px;left:0px;z-index: 10;cursor: pointer;}
+.LeftSlide img{width: 40px;position: absolute;top: 50%; transform: translateY(-50%);padding-left: 20px;padding-right: 10px}
+
+.RightSlide{width: 70px;position: absolute;height: 100vh;top: 0px;right:0px;z-index: 10;cursor: pointer;}
+.RightSlide img{width: 40px;position: absolute;top: 50%; transform: translateY(-50%);padding-right: 20px;padding-left: 10px}
+
+/* ---------- Contact Us Styles------------*/
+
+.ContactDiv{width: 100%;}
+.ContactDiv label,.ContactDiv input, .ContactDiv textarea{width: 80%;max-width:600px;display: block;text-align: left;}
+
+.ContactDiv input ,.ContactDiv textarea{padding: 8px;font-weight: 500;border:2px solid #c7c7c7;}
+.ContactDiv input:focus, .ContactDiv textarea:focus{border:2px solid #5f5f5f;}
+
+.ContactDiv textarea{resize: vertical;}
+
+
+
+.ContactDiv label{margin-top: 20px;margin-bottom: 5px;}
+
+
+.BlueBtn{background-color:#3379c0;border: 2px solid white;padding: 15px 50px;display: block;cursor: pointer;color: white;font-size: 16px;font-weight: 500;margin-top: 40px;}
+.BlueBtn:hover{background-color:#11232f;border: 2px solid white; color: white;}
+
+
+
+section{width: 100%;box-sizing: border-box;padding: 20px 40px;margin-top:0px;margin-bottom:0px;padding-top:30px;min-height:100vh;}
+
+
+
+.hidden{display: none !important;}
+.hiddenMobile{display: block !important;}
+.showAnimated{animation-duration: 0.5s;animation-name:TranslateLeft; }
+
+
+@keyframes TranslateLeft{
+		from{transform: translateX(50px);opacity: 0;}
+		to{transform: translateX(0px);opacity: 1;}
+	}
+
+
+.FullScreen{width: 100%;box-sizing: border-box;}
+
+
+
+/* ---------- Portfolio Styles------------*/
+.Image{width: 30%;height: 300px;display: inline-block;background-image: url('../img/Slider/water1.jpg');background-size: cover;margin: 1%;background-position:center center;cursor: pointer;}
+.Image:hover{background-size: 153% 105% ;}
+
+
+
+/* ---------- About Us Styles------------*/
+
+#AboutUs{background-color: #3379c0;margin-top:0px;padding-top: 30px}
+#AboutUs h1,#AboutUs p{color:white;text-align: center;}
+
+#AboutUs img{width: 80%;}
+
+
+
+/* ---------- Blog Styles------------*/
+
+#Blog{background-color: #3379c0;margin-top:0px;padding-top: 30px}
+#Blog h1,#Blog p{color:white;text-align: center;}
+
+#Blog img{width: 80%;}
+
+/* ---------- Footer Styles------------*/
+footer{padding: 20px;background-color: #050c10;}
+footer p{color: white;}
+
+.ScrollToTopBtn{position: fixed;right: 20px;bottom: 20px;z-index: 100;width: 25px;height:25px;padding: 15px;border-radius: 50%;background-color: #3173b7;cursor: pointer;box-shadow: 0px 0px 9px 2px #00000024;}
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+	.BurgerBtn{height:20px;padding: 30px;display: inline-block;vertical-align: top;cursor: pointer;position: fixed;top:0px;right: 0px; }
+	.NavLinks{display: block;position: fixed;top:80px;width: 100%;box-sizing: border-box;margin:0px;z-index: 110;height: 100vh;background-color: #14232f;}
+	.NavLinks a{display: block;}
+	.NavLinks li{width: 100%;margin: 0px;padding: 0px 20px;line-height: 80px;background-color: #203546;border-bottom: 1px solid #0d1923;}
+
+	@keyframes ZoomOutAnimation{
+		from{background-size:2133px 1200px  ;}
+		to{background-size:1920px 1080px ; }
+	}
+
+	.hiddenMobile{display: none !important;}
+	.Image{width:100%;height:200px;}
+
+	.NavLogo{height:30px;padding: 25px 0px;display: inline-block;vertical-align: top;position: fixed;top:0px; }
+}
+
+/* Tablet Styles*/
+@media only screen and (min-width: 600px) {
+
+	.NavLogo{height:30px;padding: 25px 0px;display: inline-block;vertical-align: top;position: fixed;top:0px; }
+
+	@keyframes ZoomOutAnimation{
+		from{background-size:2133px 1200px  ;}
+		to{background-size:1920px 1080px ; }
+	}
+
+	.Image{width:40%;height:200px;}
+
+}
+
+
+
+
+/* PC Styles */
+@media only screen and (min-width: 992px) {
+
+	@keyframes ZoomOutAnimation{
+		from{background-size:2133px 1200px;}
+		to{background-size:1920px 1080px;}
+	}
+}
+
+/* Large Tablet Styles */
+@media only screen and (min-width: 1020px) and (min-height: 1300px) {
+
+	@keyframes ZoomOutAnimation{
+		from{background-size:cover;}
+		to{background-size:cover;}
+	}
+}
+
+
+/* HD Screens Styles */
+@media only screen and (min-width: 1080px) {
+
+	@keyframes ZoomOutAnimation{
+		from{background-size:cover;}
+		to{background-size:cover;}
+	}
+}
